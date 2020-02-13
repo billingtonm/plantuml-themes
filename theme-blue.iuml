@@ -1,0 +1,51 @@
+' Blue Theme
+
+skinparam defaultFontName Calibri
+!define fontsize 16
+
+!define BORDER_COLOUR CornflowerBlue
+!define BACKGROUND_COLOUR LightSkyBlue
+
+!define CONTAINER_BACKGROUND #f0f0f0
+
+!function SKINPARAM($class)
+skinparam $class {
+	BackgroundColor BACKGROUND_COLOUR
+	BorderColor BORDER_COLOUR
+}
+!endfunction
+
+skinparam sequence {
+
+	ArrowColor Navy
+    ArrowFontSize fontsize
+	LifeLineBorderColor DimGrey
+	LifeLineBackgroundColor SkyBlue 
+    DividerFontSize fontsize
+
+    BoxBorderColor #blue
+	
+	ParticipantBorderColor BORDER_COLOUR
+	ParticipantBackgroundColor BACKGROUND_COLOUR
+    ParticipantFontSize fontsize
+	ParticipantFontColor Black
+	
+	ActorBorderColor BORDER_COLOUR
+	ActorBackgroundColor BACKGROUND_COLOUR
+	ActorFontColor Black
+    ActorFontSize fontsize
+
+}
+
+' Activity Diagrams
+SKINPARAM("Activity")
+SKINPARAM("activityDiamond")
+' Component Diagrams
+SKINPARAM("Control")
+SKINPARAM("Component")
+SKINPARAM("Interface")
+' Containers
+SKINPARAM("Cloud")
+SKINPARAM("Database")
+
+SKINPARAM("Class")
