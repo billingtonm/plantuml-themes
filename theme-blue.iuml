@@ -1,7 +1,7 @@
 ' Blue Theme
 
-' Author: 			Matthew Billington
-' Last Modified:	13-FEB-2020
+' Author: 		Matthew Billington
+' Last Modified:	31-JUL-2020: Updates of syntax to support plantuml 1.2020.14 (changed function SKINPARAM to procedure)
 
 skinparam defaultFontName Calibri
 !define fontsize 16
@@ -11,32 +11,32 @@ skinparam defaultFontName Calibri
 
 !define CONTAINER_BACKGROUND #f0f0f0
 
-!function SKINPARAM($class)
+!procedure SKINPARAM($class)
 skinparam $class {
 	BackgroundColor BACKGROUND_COLOUR
 	BorderColor BORDER_COLOUR
 }
-!endfunction
+!endprocedure
 
 skinparam sequence {
 
 	ArrowColor Navy
-    ArrowFontSize fontsize
+	ArrowFontSize fontsize
 	LifeLineBorderColor DimGrey
 	LifeLineBackgroundColor SkyBlue 
-    DividerFontSize fontsize
+	DividerFontSize fontsize
 
-    BoxBorderColor #blue
+	BoxBorderColor #blue
 	
 	ParticipantBorderColor BORDER_COLOUR
 	ParticipantBackgroundColor BACKGROUND_COLOUR
-    ParticipantFontSize fontsize
+	ParticipantFontSize fontsize
 	ParticipantFontColor Black
 	
 	ActorBorderColor BORDER_COLOUR
 	ActorBackgroundColor BACKGROUND_COLOUR
 	ActorFontColor Black
-    ActorFontSize fontsize
+	ActorFontSize fontsize
 
 }
 
